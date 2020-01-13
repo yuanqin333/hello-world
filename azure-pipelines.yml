@@ -17,3 +17,10 @@ steps:
     echo MSCI.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- script: hello.sh
+  displayName: 'Run a shell script!'
+
+- task: BatchScript@1
+  inputs:
+    filename: 'hello.sh'
